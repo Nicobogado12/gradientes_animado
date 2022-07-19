@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    width: 1200;
+    height: 1200;
+}
+
+.card{
+    position: relative;
+    top: 250px;
+    margin-left: 450px;
+    width: 400px;
+    height: 450px;
+    background-color: #151515;
+    border: 10px solid;
+    border-image: 
+    linear-gradient(
+    #ff512f,
+    #dd2476,
+    #1c64ff) 1;
+
+    animation: rotate
+    2.5s
+    ease-in
+    infinite;
+}
+
+@keyframes rotate {
+    50%{
+        border-image:
+        linear-gradient(
+        350deg,         
+        #ff512f,
+        #dd2476,
+        #1c64ff) 1;
+    }
+}
+
+figcaption{
+    text-align: center;
+    color: white;
+    
+}
